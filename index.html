@@ -159,8 +159,8 @@
       font-size: 0.7em;
       line-height: 1.4;
       width: 85%;
-      margin: 12px auto 0;
-      text-align: center; /* L'alignement du texte est maintenant CENTRÉ */
+      margin: 12px auto 0; /* Ajout de 'auto' pour centrer le bloc horizontalement */
+      text-align: left;
     }
   </style>
 </head>
@@ -178,7 +178,7 @@
   <h1>Joyeuses Fêtes ! 🎁</h1>
 
   <p>Tout est réuni pour un max de performances et de style.<br>
-  <span class="pulsing-text">Livraison Gratuite 48h – Qualité Authentique 🎅✨</span></p>
+  <span class="pulsing-text">Livraison Gratuite 48h – Qualité Authentique 🎅</span></p>
 
   <button id="start-button"></button>
   <div id="countdown" class="timer"></div>
@@ -225,7 +225,7 @@ function startRedirect() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  startButton.textContent = `Cliquez pour activer la magie  Noël (${seconds}s)🎵`;
+  startButton.textContent = `Cliquez pour activer la magie de Noël (${seconds}s)🎵`;
   startButton.addEventListener('click', startRedirect);
 });
 </script>
